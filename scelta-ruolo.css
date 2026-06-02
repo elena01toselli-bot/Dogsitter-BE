@@ -235,3 +235,16 @@
   /* display: block rimuove lo spazio vuoto sotto l'immagine (comportamento default inline) */
   display: block;
 }
+
+/* Nasconde l'header globale solo in questa pagina.
+   !important è necessario per sovrascrivere il display: flex
+   definito in app.css, che altrimenti avrebbe la precedenza */
+.header-globale {
+  display: none !important;
+}
+
+/* Nasconde il footer globale solo in questa pagina.
+   Stesso motivo: sovrascrive gli stili definiti in app.css */
+.footer-globale {
+  display: none !important;
+}
